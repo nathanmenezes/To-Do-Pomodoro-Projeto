@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nathan Menezes">
+    <meta name="robots" content="index,follow">
+    <title>Todo & Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="toDoList">
+        <h1>
+            TO-DO LIST
+        </h1>
+        <div class="toDocontainer">
+            <div class="inputItens">
+                <input type="text" id="inputField" placeholder="Digite a Tarefa" required>
+                <button id="addToDo" onclick="addId()">+</button>
+            </div>
+            <div class="to-dos" id="toDoContainer">
+            </div>
+        </div>
+    </div>
+
+    <div class="pomodoro">
+        <h1>
+            POMODORO
+        </h1>
+        <div class="pomodoroContainer">
+            <div class="time">
+                <p id="timer">25:00</p>
+                <p id="status">Foco</p>
+            </div>
+            <div class="pomodoroBtn">
+                <button id="start" onclick="start()">START</button>
+                <button id="reset" onclick="reset()">RESET</button>
+                <button id="stop" onclick="stop()">STOP</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
