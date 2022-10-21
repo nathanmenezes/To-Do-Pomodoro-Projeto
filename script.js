@@ -10,9 +10,9 @@ addToDoButtom.addEventListener('click', function () {
     let div = document.createElement(`div`); // cria o elemento <div>
 
 
-    div.classList.add(`toDoItem`) //adiciona classe na div
-    div.setAttribute('id', todoid) //adiciona id na div
-    toDoContainer.appendChild(div) // adiciona a div como elemento filho da div principal
+    div.classList.add(`toDoItem`); //adiciona classe na div
+    div.setAttribute('id', todoid); //adiciona id na div
+    toDoContainer.appendChild(div); // adiciona a div como elemento filho da div principal
 
 
     let paragraph = document.createElement(`p`); // Cria o elemento <p>
@@ -46,7 +46,7 @@ addToDoButtom.addEventListener('click', function () {
 })
 
 function addId() {
-    todoid++
+    todoid++;
 }
 
 let minutos = 25;
@@ -62,13 +62,13 @@ function timer(){
     }
     segundos--;
     if (minutos == 0 && segundos == 0 && fase == "Foco"){
-        alert("Hora de Descansar!")
+        alert("Hora de Descansar!");
         minutos = 5;
         segundos = 0;
         fase = "Descansar";
     }
     if (minutos == 0 && segundos == 0 && fase == "Descansar"){
-        alert("Hora de Voltar ao Foco!")
+        alert("Hora de Voltar ao Foco!");
         minutos = 25;
         segundos = 0;
         fase = "Foco";
